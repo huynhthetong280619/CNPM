@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5f256a08e78d4d40988c9107b7ffe0aa" Name="Diagram1">
+        <EntityTypeShape EntityType="QUANLYSHOPModel.BANG_BLOCK" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYSHOPModel.BANG_CATEGORY" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYSHOPModel.BANG_CHITIETHOADON" Width="1.5" PointX="5.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYSHOPModel.BANG_DETAIL" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYSHOPModel.BANG_HISTORY" Width="1.5" PointX="1.5" PointY="26.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYSHOPModel.BANG_HOADON" Width="1.5" PointX="3" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYSHOPModel.BANG_KHACHHANG" Width="1.5" PointX="0.75" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYSHOPModel.BANG_KHUYENMAI" Width="1.5" PointX="1.5" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYSHOPModel.BANG_NHANVIEN" Width="1.5" PointX="0.75" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYSHOPModel.BANG_SANPHAM" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYSHOPModel.BANG_THONGBAO" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYSHOPModel.sysdiagram" Width="1.5" PointX="4.75" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="QUANLYSHOPModel.FK_SANPHAM_BLOCK" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYSHOPModel.FK_SANPHAM_CATEGORY" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYSHOPModel.FK__BANG_CHIT__idhoa__607251E5" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYSHOPModel.FK__BANG_CHIT__idhoa__6442E2C9" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYSHOPModel.FK__BANG_CHIT__idsan__6166761E" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYSHOPModel.FK__BANG_CHIT__idsan__65370702" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYSHOPModel.FK_CHITIETHOADON_HOADON" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYSHOPModel.FK_CHITIETHOADON_SANPHAM" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYSHOPModel.FK_SANPHAM_DETAIL" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYSHOPModel.FK_HISTORY_KHACHHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYSHOPModel.FK_HISTORY_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYSHOPModel.FK_NHANVIEN_HISTORY" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYSHOPModel.FK_HOADON_KHACHHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYSHOPModel.FK_HOADON_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYSHOPModel.FK_KHACHHANG_KHUYENMAI" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
