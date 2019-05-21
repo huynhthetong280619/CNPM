@@ -52,5 +52,10 @@ namespace BUSSINESS_LOGIC_LAYER
         {
             return NHANVIEN_DAL.CheckExist(idNv);
         }
+
+        public static List<NHANVIEN_DTO> GetNhanVienSoDienThoai(string sdt)
+        {
+            return NHANVIEN_DAL.GetNhanVienSoDienThoai(sdt);
+        }
     }
 }

@@ -45,6 +45,7 @@
             this.btn_Profile = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnl_Bar = new System.Windows.Forms.Panel();
             this.pnl_Main = new QuanLyCuaHang.Gradient();
+            this.ViewDetail = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Minisize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_IconPosition)).BeginInit();
@@ -130,6 +131,7 @@
             this.pnl_Menu.Controls.Add(this.btn_Help);
             this.pnl_Menu.Controls.Add(this.panel1);
             this.pnl_Menu.Controls.Add(this.btn_Product);
+            this.pnl_Menu.Controls.Add(this.ViewDetail);
             this.pnl_Menu.Controls.Add(this.btn_Notification);
             this.pnl_Menu.Controls.Add(this.btn_Logout);
             this.pnl_Menu.Controls.Add(this.btn_Sell);
@@ -220,7 +222,7 @@
             this.btn_Product.IconVisible = true;
             this.btn_Product.IconZoom = 40D;
             this.btn_Product.IsTab = true;
-            this.btn_Product.Location = new System.Drawing.Point(1, 309);
+            this.btn_Product.Location = new System.Drawing.Point(1, 255);
             this.btn_Product.Name = "btn_Product";
             this.btn_Product.Normalcolor = System.Drawing.Color.Transparent;
             this.btn_Product.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(206)))));
@@ -328,7 +330,7 @@
             this.btn_Sell.IconVisible = true;
             this.btn_Sell.IconZoom = 40D;
             this.btn_Sell.IsTab = true;
-            this.btn_Sell.Location = new System.Drawing.Point(1, 363);
+            this.btn_Sell.Location = new System.Drawing.Point(1, 309);
             this.btn_Sell.Name = "btn_Sell";
             this.btn_Sell.Normalcolor = System.Drawing.Color.Transparent;
             this.btn_Sell.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(206)))));
@@ -364,7 +366,7 @@
             this.btn_Profile.IconVisible = true;
             this.btn_Profile.IconZoom = 40D;
             this.btn_Profile.IsTab = true;
-            this.btn_Profile.Location = new System.Drawing.Point(1, 254);
+            this.btn_Profile.Location = new System.Drawing.Point(1, 200);
             this.btn_Profile.Name = "btn_Profile";
             this.btn_Profile.Normalcolor = System.Drawing.Color.Transparent;
             this.btn_Profile.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(206)))));
@@ -404,6 +406,42 @@
             this.pnl_Main.Name = "pnl_Main";
             this.pnl_Main.Size = new System.Drawing.Size(1056, 577);
             this.pnl_Main.TabIndex = 5;
+            // 
+            // ViewDetail
+            // 
+            this.ViewDetail.Active = false;
+            this.ViewDetail.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(206)))));
+            this.ViewDetail.BackColor = System.Drawing.Color.Transparent;
+            this.ViewDetail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ViewDetail.BorderRadius = 0;
+            this.ViewDetail.ButtonText = "    View Product";
+            this.ViewDetail.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ViewDetail.DisabledColor = System.Drawing.Color.Gray;
+            this.ViewDetail.Iconcolor = System.Drawing.Color.Transparent;
+            this.ViewDetail.Iconimage = ((System.Drawing.Image)(resources.GetObject("ViewDetail.Iconimage")));
+            this.ViewDetail.Iconimage_right = null;
+            this.ViewDetail.Iconimage_right_Selected = null;
+            this.ViewDetail.Iconimage_Selected = null;
+            this.ViewDetail.IconMarginLeft = 0;
+            this.ViewDetail.IconMarginRight = 0;
+            this.ViewDetail.IconRightVisible = true;
+            this.ViewDetail.IconRightZoom = 0D;
+            this.ViewDetail.IconVisible = true;
+            this.ViewDetail.IconZoom = 40D;
+            this.ViewDetail.IsTab = true;
+            this.ViewDetail.Location = new System.Drawing.Point(1, 363);
+            this.ViewDetail.Name = "ViewDetail";
+            this.ViewDetail.Normalcolor = System.Drawing.Color.Transparent;
+            this.ViewDetail.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(98)))), ((int)(((byte)(206)))));
+            this.ViewDetail.OnHoverTextColor = System.Drawing.Color.White;
+            this.ViewDetail.selected = false;
+            this.ViewDetail.Size = new System.Drawing.Size(207, 48);
+            this.ViewDetail.TabIndex = 23;
+            this.ViewDetail.Text = "    View Product";
+            this.ViewDetail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ViewDetail.Textcolor = System.Drawing.Color.White;
+            this.ViewDetail.TextFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewDetail.Click += new System.EventHandler(this.ViewDetail_Click);
             // 
             // frm_MainEmployee
             // 
@@ -448,5 +486,6 @@
         private Gradient pnl_Menu;
         private System.Windows.Forms.PictureBox ptcChat;
         private System.Windows.Forms.Panel panel1;
+        private Bunifu.Framework.UI.BunifuFlatButton ViewDetail;
     }
 }

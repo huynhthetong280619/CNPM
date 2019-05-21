@@ -132,5 +132,13 @@ namespace QuanLyCuaHang
             info.Dock = DockStyle.Fill;
             pnl_Main.Controls.Add(info);
         }
+
+        private void ViewDetail_Click(object sender, EventArgs e)
+        {
+            pnl_Main.Controls.Clear();
+            uct_ViewDetail view = new uct_ViewDetail();
+            view.Dock = DockStyle.Fill;
+            pnl_Main.Controls.Add(view);
+        }
     }
 }

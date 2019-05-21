@@ -36,6 +36,7 @@
             this.lbl_IconPosition = new System.Windows.Forms.PictureBox();
             this.pnl_Menu = new System.Windows.Forms.Panel();
             this.gradient1 = new QuanLyCuaHang.Gradient();
+            this.btnBackupPassword = new System.Windows.Forms.PictureBox();
             this.ptcInfor = new System.Windows.Forms.PictureBox();
             this.ptbSale = new System.Windows.Forms.PictureBox();
             this.ptcChat = new System.Windows.Forms.PictureBox();
@@ -56,6 +57,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lbl_IconPosition)).BeginInit();
             this.pnl_Menu.SuspendLayout();
             this.gradient1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBackupPassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptcInfor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptcChat)).BeginInit();
@@ -150,6 +152,7 @@
             // 
             this.gradient1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(12)))), ((int)(((byte)(41)))));
             this.gradient1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(43)))), ((int)(((byte)(99)))));
+            this.gradient1.Controls.Add(this.btnBackupPassword);
             this.gradient1.Controls.Add(this.ptcInfor);
             this.gradient1.Controls.Add(this.ptbSale);
             this.gradient1.Controls.Add(this.ptcChat);
@@ -169,11 +172,23 @@
             this.gradient1.Size = new System.Drawing.Size(209, 577);
             this.gradient1.TabIndex = 0;
             // 
+            // btnBackupPassword
+            // 
+            this.btnBackupPassword.BackColor = System.Drawing.Color.Transparent;
+            this.btnBackupPassword.Image = global::QuanLyCuaHang.Properties.Resources.key;
+            this.btnBackupPassword.Location = new System.Drawing.Point(167, 102);
+            this.btnBackupPassword.Name = "btnBackupPassword";
+            this.btnBackupPassword.Size = new System.Drawing.Size(27, 27);
+            this.btnBackupPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnBackupPassword.TabIndex = 29;
+            this.btnBackupPassword.TabStop = false;
+            this.btnBackupPassword.Click += new System.EventHandler(this.btnBackupPassword_Click);
+            // 
             // ptcInfor
             // 
             this.ptcInfor.BackColor = System.Drawing.Color.Transparent;
             this.ptcInfor.Image = global::QuanLyCuaHang.Properties.Resources.png;
-            this.ptcInfor.Location = new System.Drawing.Point(167, 96);
+            this.ptcInfor.Location = new System.Drawing.Point(167, 69);
             this.ptcInfor.Name = "ptcInfor";
             this.ptcInfor.Size = new System.Drawing.Size(27, 27);
             this.ptcInfor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -197,7 +212,7 @@
             // 
             this.ptcChat.BackColor = System.Drawing.Color.Transparent;
             this.ptcChat.Image = global::QuanLyCuaHang.Properties.Resources.iconfinder_Facebook_Messenger_1298720;
-            this.ptcChat.Location = new System.Drawing.Point(167, 54);
+            this.ptcChat.Location = new System.Drawing.Point(167, 36);
             this.ptcChat.Name = "ptcChat";
             this.ptcChat.Size = new System.Drawing.Size(27, 27);
             this.ptcChat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -570,6 +585,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lbl_IconPosition)).EndInit();
             this.pnl_Menu.ResumeLayout(false);
             this.gradient1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnBackupPassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptcInfor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptcChat)).EndInit();
@@ -599,6 +615,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox ptcInfor;
         private System.Windows.Forms.PictureBox ptbSale;
+        private System.Windows.Forms.PictureBox btnBackupPassword;
     }
 }
 

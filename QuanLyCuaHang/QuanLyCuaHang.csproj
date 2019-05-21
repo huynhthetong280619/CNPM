@@ -212,6 +212,12 @@
     <Compile Include="gridViewLinear.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="LayoutSanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LayoutSanPham.Designer.cs">
+      <DependentUpon>LayoutSanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QUANLYSHOPDataSet.Designer.cs">
@@ -224,6 +230,12 @@
     </Compile>
     <Compile Include="ReportR.Designer.cs">
       <DependentUpon>ReportR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uct_backuppass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uct_backuppass.Designer.cs">
+      <DependentUpon>uct_backuppass.cs</DependentUpon>
     </Compile>
     <Compile Include="uct_Block.cs">
       <SubType>UserControl</SubType>
@@ -242,6 +254,12 @@
     </Compile>
     <Compile Include="uct_Detail.Designer.cs">
       <DependentUpon>uct_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uct_detailLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uct_detailLayout.Designer.cs">
+      <DependentUpon>uct_detailLayout.cs</DependentUpon>
     </Compile>
     <Compile Include="uct_Employee.cs">
       <SubType>UserControl</SubType>
@@ -296,6 +314,12 @@
     </Compile>
     <Compile Include="uct_SellProduct.Designer.cs">
       <DependentUpon>uct_SellProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uct_ViewDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uct_ViewDetail.Designer.cs">
+      <DependentUpon>uct_ViewDetail.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="chat.resx">
       <DependentUpon>chat.cs</DependentUpon>
@@ -354,6 +378,9 @@
     <EmbeddedResource Include="frm_reportHistory.resx">
       <DependentUpon>frm_reportHistory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LayoutSanPham.resx">
+      <DependentUpon>LayoutSanPham.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -368,6 +395,9 @@
     <EmbeddedResource Include="ReportR.resx">
       <DependentUpon>ReportR.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="uct_backuppass.resx">
+      <DependentUpon>uct_backuppass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="uct_Block.resx">
       <DependentUpon>uct_Block.cs</DependentUpon>
     </EmbeddedResource>
@@ -376,6 +406,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="uct_Detail.resx">
       <DependentUpon>uct_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uct_detailLayout.resx">
+      <DependentUpon>uct_detailLayout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="uct_Employee.resx">
       <DependentUpon>uct_Employee.cs</DependentUpon>
@@ -403,6 +436,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="uct_SellProduct.resx">
       <DependentUpon>uct_SellProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uct_ViewDetail.resx">
+      <DependentUpon>uct_ViewDetail.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -495,6 +531,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

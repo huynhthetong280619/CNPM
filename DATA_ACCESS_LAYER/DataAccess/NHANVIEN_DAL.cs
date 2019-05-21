@@ -32,6 +32,14 @@ namespace DATA_ACCESS_LAYER.DataAccess
             return null;
            
         }
+
+        public static List<NHANVIEN_DTO> GetNhanVienSoDienThoai(string sdt)
+        {
+            QuanLyShop = new QUANLYCUAHANGEntities();
+            var result = from nv in QuanLyShop.BANG_NHANVIEN where nv.phonenumber.ToString().Trim() == sdt.Trim() select new NHANVIEN_DTO { idnhanvien = nv.idnhanvien, username = nv.username, password = nv.password, name = nv.name, phonenumber = nv.phonenumber, idcard = nv.idcard, address = nv.address, idhistorysell = nv.idhistorysell, position = nv.position };
+            return result.ToList();
+        }
+
         //Thêm nhân viên.
         public static NHANVIEN_DTO ThemNhanVien(BANG_NHANVIEN nv)
         {

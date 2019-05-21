@@ -167,5 +167,13 @@ namespace QuanLyCuaHang
             Discount frm_discount = new Discount();
             frm_discount.ShowDialog();
         }
+
+        private void btnBackupPassword_Click(object sender, EventArgs e)
+        {
+            pnl_Main.Controls.Clear();
+            uct_backuppass backup = new uct_backuppass();
+            backup.Dock = DockStyle.Fill;
+            pnl_Main.Controls.Add(backup);
+        }
     }
 }
